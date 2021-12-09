@@ -1,16 +1,11 @@
-require 'rspec'
-require './lib/docking_station.rb'
-
-describe Bike do
-    it Bike do
-    end
-end
+require 'docking_station'
+require 'bike'
 
 describe Bike do
     describe '#working?' do
         it 'responds to working?' do
-            my_bike = Bike.new
-            expect(my_bike.working?).to eq(true)
+            expect(subject.working?).to be true
         end
     end
 end
+
